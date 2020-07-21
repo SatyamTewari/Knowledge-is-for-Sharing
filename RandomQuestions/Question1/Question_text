@@ -1,0 +1,23 @@
+An anagram of a string is another string with the same characters in the same frequency, in any order.
+For example 'abc', 'bca', 'cab', 'acb', 'bac', 'cba' are all anagrams of the string 'abc'.
+Given two arrays of strings, for every string in one list, determine how many anagrams of it are in the other list.
+Write a function that receives dictionary and query, two string arrays. It should return an array of intergers where
+each element i contains the number of anagrams of query[i] that exist in dictionary.
+
+For example:
+dictionary = ["hack", "a", "rank", "khac", "ackh", "kran", "rankhacker", "a", "ab", "ba", "stairs", "raits"]
+query = ["a", "nark", "bs", "hack", "stair"]
+
+Output : 
+[2,2,0,3,1]
+
+Solution:
+query[0] = 'a' has 2 anagrams in dictionary: 'a' and 'a'.
+
+query[1] = 'nark' has 2 anagrams in dictionary: 'rank' and 'kran'
+
+query[2] = 'bs' has 0 anagrams in dictionary.
+
+query[3] = 'hack' has 3 anagrams in dictionary: 'hack', 'khac', 'ackh'
+
+query[4] = 'stair' has 1 anagram in dictionary: 'raits'
